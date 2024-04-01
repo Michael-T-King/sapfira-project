@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    >
+    <link
+      rel="mask-icon"
+      href="img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    >
+    <meta name="msapplication-TileColor" content="#2d89ef" >
+    <meta name="theme-color" content="#ffffff" >
+    <link rel="stylesheet" href="css/index.css" >
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+    <title>Sapfira-main</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="nav__logo">
+            <img class="nav__logo-img" src="img/sapfira-light.png" alt="logo"
+          ></a>
+          <ul class="nav__header-list">
+            <li class="nav__header-item">
+              <a href="category.html">КАТАЛОГ</a>
+            </li>
+            <li class="nav__header-item"><a href="#">КОНТАКТЫ</a></li>
+            <li class="nav__header-item"><a href="#">ДОСТАВК</a>А</li>
+            <li class="nav__header-item"><a href="#">О НАС</a></li>
+          </ul>
+          <form class="search-form" action="/search" method="GET">
+            <input
+              type="text"
+              placeholder=""
+              name="query"
+              class="search-input"
+            >
+            <button type="submit" class="search-button">
+              <img src="img/icon/search.svg" alt="" class="search-img" >
+            </button>
+          </form>
+          <div class="acaunt-cart">
+            <a href="#" class="login"
+              ><img class="login-img" src="img/icon/accaunt.svg" alt="login"
+            ></a>
+            <a href="#" class="cart"
+              ><img class="cart-img" src="img/icon/cart.svg" alt="cart"
+            ></a>
+            <p class="cart__counter">100</p>
+          </div>
+        </nav>
+        <div class="discription">
+          <span class="discription__title"
+            >УКРАШЕНИЯ И СУВЕНИРЫ ИЗ ПОЛИМЕРНОЙ ГЛИНЫ,</span
+          >
+          <span class="discription__text"
+            >созданные с любовью и творчеством.</span
+          >
+          <span class="discription__order">Искусство в каждой детали!</span>
+        </div>
+        <div class="header__img-container">
+          <img src="img/header-img.png" alt="" class="header__img" >
+        </div>
+      </div>
+    </header>
+
+    <div class="promoution">
+      <div class="container">
+        <ul class="promoution__list">
+          <li class="promoution__item">
+            <a class="promoution__list-text" href="#"
+              ><img
+                class="promoution__item-new"
+                src="img/icon/new.svg"
+                alt="новинки"
+              >НОВИНКИ</a
+            >
+          </li>
+
+          <li class="promoution__item">
+            <a class="promoution__list-text" href="#"
+              ><img
+                class="promoution__item-promoution"
+                src="img/icon/promotion.svg"
+                alt="акции"
+              >АКЦИИ</a
+            >
+          </li>
+
+          <li class="promoution__item">
+            <a class="promoution__list-text" href="#"
+              ><img
+                class="promoution__item-discounts"
+                src="img/icon/discounts.svg"
+                alt="скидки"
+              >СКИДКИ</a
+            >
+          </li>
+
+          <li class="promoution__item">
+            <a class="promoution__list-text" href="#"
+              ><img
+                class="promoution__item-sale"
+                src="img/icon/gift.svg"
+                alt="распродажа"
+              >РАСПРОДАЖА</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="container main__container">
+        <span class="main__discription-title">
+          ЧТО ТАКОЕ ПОЛИМЕРНАЯ ГЛИНА
+        </span>
+        <div class="main__discription-container">
+          <span class="main__discription">
+            
+              Полимерная глина (она же пластика или термопластика) – это
+              декоративный материал, который на ощупь напоминает пластилин, да и
+              внешне тоже схож с ним. Полимерная глина обладает большей
+              эластичностью и меньше прилипает к рукам. Она уже давно стала
+              популярна у художников, дизайнеров и любителей мастерить. Основу
+              этого материала составляет поливинилхлорид. При воздействии на
+              него высокой температуры он затвердевает и изделия напоминают
+              пластмассовые или керамические.
+          </span>
+
+          <img
+            src="img/discription3.jpg"
+            alt=""
+            class="main__img-discription" 
+          >
+        </div>
+
+        <div class="main__discription-container">
+          <img
+            src="img/discription2.jpg"
+            alt=""
+            class="main__img-discription-down"
+          >
+
+          <span class="main__discription ">
+              в своих изделиях мы применяем премиальные виды полимерной глины
+              высокого качества такие как: Cernit, Fimo, Sculpey. благодаря
+              высокому качеству, изделия получаются более натуральными и
+              выглядят превосходно и без изъянов. Так же глина премиальных
+              классов менее токсична и после запекания полностью безопасна для
+              человека.
+          </span>
+        </div>
+        <div class="line" id="line"></div>
+        <div class="main__new"
+          ><a href="category.html" class="main__new-text">КАТАЛОГ</a>
+      </div>
+
+        <div class="slider">
+          <div class="category" id="category">
+                <div class="lots__category">
+                  <a href="braslets.html">
+                    <div class="braslety">
+                      <img src="img/product/braslet.jpg" alt="" class="lots__category-img" >
+                      <span class="braslety__title">БРАСЛЕТЫ</span>
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="lots__category">
+                  <a href="#">
+                    <div class="breloki">
+                      <img src="img/product/brelok.jpg" alt="" class="lots__category-img" >
+                      <span class="braslety__title">БРЕЛОКИ</span>
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="lots__category">
+                  <a href="#">
+                    <div class="brosh">
+                      <img src="img/product/nabor.jpg" alt="" class="lots__category-img" >
+                      <span class="braslety__title">БРОШИ</span>
+                    </div>
+                  </a>
+                </div>
+  
+      <div class="lots__category">
+              <a href="#" >
+                <div class="brosh">
+                  <img
+                    src="img/product/brelok.jpg"
+                    alt=""
+                    class="lots__category-img"
+                  >
+                  <span class="braslety__title">КОЛЬЕ</span>
+                </div>
+              </a>
+      </div>
+  
+           <div class="lots__category">
+              <a href="#" >
+                <div class="brosh">
+                  <img
+                    src="img/product/brelok.jpg"
+                    alt=""
+                    class="lots__category-img"
+                  >
+                  <span class="braslety__title">МАГНИТЫ</span>
+                </div>
+              </a>
+           </div>
+  
+           <div class="lots__category">
+              <a href="#" >
+                <div class="brosh">
+                  <img
+                    src="img/product/brelok.jpg"
+                    alt=""
+                    class="lots__category-img"
+                  >
+                  <span class="braslety__title">НАБОРЫ</span>
+                </div>
+              </a>
+           </div>
+  
+           <div class="lots__category">
+              <a href="#" >
+                <div class="brosh">
+                  <img
+                    src="img/product/brelok.jpg"
+                    alt=""
+                    class="lots__category-img"
+                  >
+                  <span class="braslety__title">ПОДВЕСКИ, КУЛОНЫ</span>
+                </div>
+              </a>
+           </div>
+  
+            <div class="lots__category">
+              <a href="#" >
+                <div class="brosh">
+                  <img
+                    src="img/product/brelok.jpg"
+                    alt=""
+                    class="lots__category-img"
+                  >
+                  <span class="braslety__title">СЕРЬГИ</span>
+                </div>
+              </a>
+            </div>
+  
+            <div class="lots__category">
+              <a href="#">
+                <div class="brosh">
+                  <img
+                    src="img/product/brelok.jpg"
+                    alt=""
+                    class="lots__category-img"
+                  >
+                  <span class="braslety__title">СУВЕНИРЫ</span>
+                </div>
+              </a>
+            </div>
+  
+            <div class="lots__category">
+              <a href="#">
+                <div class="brosh">
+                  <img
+                    src="img/product/brelok.jpg"
+                    alt=""
+                    class="lots__category-img"
+                  >
+                  <span class="braslety__title">РАЗНОЕ</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="line"></div>
+        <a href="#" class="main__new"><h2 class="main__new-text">НОВИНКИ</h2> </a>
+
+        <div class="lots__container">
+<div class="lots">
+            <a href="#" >
+              <div class="braslety">
+                <img src="img/product/braslet.jpg" alt="" class="lots__img" >
+                <img src="img/icon/new.png" alt="" class="new__lable">
+                <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+                <div><h4 class="lots__price">230 p</h4></div>
+                
+              </div>
+            </a>
+            <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#" >
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img">
+      <img src="img/icon/new.png" alt="" class="new__lable">
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+      
+    </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#" >
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img" >
+      <img src="img/icon/new.png" alt="" class="new__lable">
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+      
+    </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#" >
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img" >
+      <img src="img/icon/new.png" alt="" class="new__lable">
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+      
+    </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#" >
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img" >
+      <img src="img/icon/new.png" alt="" class="new__lable">
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+      
+    </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#" >
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img">
+      <img src="img/icon/new.png" alt="" class="new__lable">
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+      
+    </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+        </div>
+
+        <div class="line"></div>
+        <span class="main__new"><a href="#" class="main__new-text">АКЦИИ</a> </span>
+
+
+        <div class="lots__container">
+          
+          <div class="lots">
+            <a href="#" >
+              <div class="braslety">
+                <img src="img/product/braslet.jpg" alt="" class="lots__img">
+                <span class="lots__promoution">АКЦИЯ</span>
+                <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+                <div><h4 class="lots__price">230 p</h4></div>
+             </div>
+            </a>
+            <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#" >
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img">
+      <span class="lots__promoution">АКЦИЯ</span>
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+          </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#" >
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img">
+      <span class="lots__promoution">АКЦИЯ</span>
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+          </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#" >
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img">
+      <span class="lots__promoution">АКЦИЯ</span>
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+          </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#" >
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img">
+      <span class="lots__promoution">АКЦИЯ</span>
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+          </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#" >
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img">
+      <span class="lots__promoution">АКЦИЯ</span>
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+          </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+        </div>
+
+        <div class="line"></div>
+        <span class="main__new"><a href="#" class="main__new-text">СКИДКИ</a> </span>
+
+        <div class="lots__container">
+
+<div class="lots">
+            <a href="#">
+              <div class="braslety">
+                <img src="img/product/braslet.jpg" alt="" class="lots__img">
+                <div class="lots__discount"><h2>-15&#37;</h2></div>
+                <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+                <div><h4 class="lots__price">230 p</h4></div>
+            </div>
+            </a>
+            <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#">
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img">
+      <div class="lots__discount"><h2>-15&#37;</h2></div>
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+  </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#">
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img">
+      <div class="lots__discount"><h2>-15&#37;</h2></div>
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+  </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#">
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img">
+      <div class="lots__discount"><h2>-15&#37;</h2></div>
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+  </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#">
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img">
+      <div class="lots__discount"><h2>-15&#37;</h2></div>
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+  </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#">
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img">
+      <div class="lots__discount"><h2>-15&#37;</h2></div>
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+  </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+        </div>
+
+        <div class="line"></div>
+        <span class="main__new"
+          ><a href="#" class="main__new-text">РАСПРОДАЖА</a>
+        </span>
+
+        <div class="lots__container">
+
+<div class="lots">
+            <a href="#">
+              <div class="braslety">
+                <img src="img/product/braslet.jpg" alt="" class="lots__img" >
+                <div class="lots__sale"><h2>РАСПРОДАЖА</h2></div>
+                <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+                <div><h4 class="lots__price">230 p</h4></div>
+              </div>
+            </a>
+            <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#">
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img" >
+      <div class="lots__sale"><h2>РАСПРОДАЖА</h2></div>
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+    </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#">
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img" >
+      <div class="lots__sale"><h2>РАСПРОДАЖА</h2></div>
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+    </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#">
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img" >
+      <div class="lots__sale"><h2>РАСПРОДАЖА</h2></div>
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+    </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#">
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img" >
+      <div class="lots__sale"><h2>РАСПРОДАЖА</h2></div>
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+    </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+
+<div class="lots">
+  <a href="#">
+    <div class="braslety">
+      <img src="img/product/braslet.jpg" alt="" class="lots__img" >
+      <div class="lots__sale"><h2>РАСПРОДАЖА</h2></div>
+      <div><h2 class="lots__title">БРАСЛЕТЫ</h2></div>
+      <div><h4 class="lots__price">230 p</h4></div>
+    </div>
+  </a>
+  <button class="to-cart-btn">В КОРЗИНУ</button>
+</div>
+        </div>
+
+
+        <div class="line"></div>
+        <span class="main__new"
+          ><a href="#" class="main__new-text">ОТЗЫВЫ НАШИХ ПОКУПАТЕЛЕЙ</a>
+        </span>
+
+        <section class="opinion">
+          <div class="opinion__block">
+            <img src="img/icon/quotes.svg" alt="" class="opinion__quotes-img" >
+            <div class="opinion__text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                eaque odit molestias dolorem, exercitationem praesentium nobis
+                eos accusantium ea animi corporis fugiat est sint, possimus
+                maxime modi facilis at quia nulla cum. Aliquid explicabo dolore
+                consequatur saepe cumque dolor necessitatibus? Doloremque quae
+                eum veniam odit quas, sapiente at sunt tenetur repellat
+                inventore, molestias debitis aperiam ex voluptate facere eos
+                exercitationem nobis non placeat quasi deserunt ducimus
+                perferendis obcaecati! Repudiandae totam placeat dolores, nisi
+                molestiae maiores quis minima earum? Consequuntur tempora quis
+                omnis, sit eos minus? Unde, quas. Iste debitis deserunt
+                exercitationem inventore itaque deleniti voluptatum ex odit,
+                eius magnam voluptates..
+              </p>
+            </div>
+            <img src="img/product/1.jpg" alt="" class="opinion__profile-img" >
+            <div class="opinion__profile-name"><h2>золушка</h2></div>
+          </div>
+
+          <div class="opinion__block">
+            <img src="img/icon/quotes.svg" alt="" class="opinion__quotes-img" >
+            <div class="opinion__text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                eaque odit molestias dolorem, exercitationem praesentium nobis
+                eos accusantium ea animi corporis fugiat est sint, possimus
+                maxime modi facilis at quia nulla cum. Aliquid explicabo dolore
+                consequatur saepe cumque dolor necessitatibus? Doloremque quae
+                eum veniam odit quas, sapiente at sunt tenetur repellat
+                inventore, molestias debitis aperiam ex voluptate facere eos
+                exercitationem nobis non placeat quasi deserunt ducimus
+                perferendis obcaecati! Repudiandae totam placeat dolores, nisi
+                molestiae maiores quis minima earum? Consequuntur tempora quis
+                omnis, sit eos minus? Unde, quas. Iste debitis deserunt
+                exercitationem inventore itaque deleniti voluptatum ex odit,
+                eius magnam voluptates..
+              </p>
+            </div>
+            <img src="img/product/1.jpg" alt="" class="opinion__profile-img" >
+            <div class="opinion__profile-name"><h2>золушка</h2></div>
+          </div>
+
+          <div class="opinion__block">
+            <img src="img/icon/quotes.svg" alt="" class="opinion__quotes-img" >
+            <div class="opinion__text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                eaque odit molestias dolorem, exercitationem praesentium nobis
+                eos accusantium ea animi corporis fugiat est sint, possimus
+                maxime modi facilis at quia nulla cum. Aliquid explicabo dolore
+                consequatur saepe cumque dolor necessitatibus? Doloremque quae
+                eum veniam odit quas, sapiente at sunt tenetur repellat
+                inventore, molestias debitis aperiam ex voluptate facere eos
+                exercitationem nobis non placeat quasi deserunt ducimus
+                perferendis obcaecati! Repudiandae totam placeat dolores, nisi
+                molestiae maiores quis minima earum? Consequuntur tempora quis
+                omnis, sit eos minus? Unde, quas. Iste debitis deserunt
+                exercitationem inventore itaque deleniti voluptatum ex odit,
+                eius magnam voluptates..
+              </p>
+            </div>
+            <img src="img/product/1.jpg" alt="" class="opinion__profile-img">
+            <div class="opinion__profile-name"><h2>золушка</h2></div>
+          </div>
+        </section>
+        <button class="comments__more">ЕЩЕ</button>
+        <dialog class="dialog__container">
+          <textarea
+            class="dialog__form"
+            placeholder="Оставьте ваш отзыв"
+          ></textarea>
+          <button class="dialog__btn">Отправить</button>
+        </dialog>
+
+
+      </div>
+      <!--container-->
+    </main>
+
+<button class="scroll-to-top" title="Scroll to top">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-triangle-up">
+    <path d="M12 8l8 8H4l8-8z"/>
+  </svg>
+</button>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__columns">
+          <div class="footer__left">
+            <img src="img/sapfira-light.png" alt="" class="footer__logo">
+            <a href="tg://resolve?domain=Lord_Michael_5" class="footer__dev">
+              Developer and creator: Michael-T-King</a
+            >
+          </div>
+
+          <div class="footer__center">
+            <ul class="footer__list">
+              <li class="nav__footer-item"><a href="#line">КАТАЛОГ</a></li>
+              <li class="nav__footer-item"><a href="#">КОНТАКТЫ</a></li>
+              <li class="nav__footer-item"><a href="#">ДОСТАВК</a>А</li>
+              <li class="nav__footer-item"><a href="#">О НАС</a></li>
+            </ul>
+            <p class="copyright">SAPFIRA © 2023 Все права защищены.</p>
+          </div>
+
+          <div class="footer__right">
+            <div class="text__contact">
+              <p class="text__contact-text">
+                Для Вас мы можем изготовить любое украшение из полимерной глины
+                по вашему желанию.
+              </p>
+              <p class="text__contact-text">
+                Вы можете оставить заявку по номеру телефона
+              </p>
+              <a class="footer__tel" href="tel:+1234567890">+1 (234) 567-890</a>
+              <p class="text__contact-text">или написать нам на почту</p>
+              <a class="footer__tel" href="mailto:example@example.com"
+                >example@example.com</a
+              >
+              <p class="text__contact-text">
+                Так же заходите к нам в ВК и группу Телеграмм
+              </p>
+              <div class="soc__container">
+                <img class="footer__soc" src="img/vk.png" alt="VK">
+                <img class="footer__soc" src="img/telegram.png" alt="VK">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-cart">
+      <div class="container">
+        <div class="modal-cart__container">
+          <input type="checkbox" class="modal-cart__checkbox-all" id="myCheckbox" >
+          <label for="myCheckbox"></label>
+          <div class="modal-cart__title"><h2>КОРЗИНА</h2></div>
+          <button class="modal__close">
+            <img src="img/icon/close.svg" alt="" class="modal__close-img" >
+          </button>
+
+<div class="modal-cart__lots-container hidden">
+
+</div>  
+          <div class="modal-cart__price-container">
+            <span class="modal-cart__all-price-title">Общая сумма: </span>
+            <span class="modal-cart__all-price">2350 p</span>
+            <button class="modal-cart__buy-all-btn">КУПИТЬ ОТМЕЧЕННЫЕ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="modal-entry">
+  <div class="container">
+    <div class="modal-entry__container">
+
+     <button class="modal-entry__close">
+            <img src="img/icon/close.svg" alt="" class="modal__close-img">
+          </button>
+       
+       <form id="loginForm">
+        <h2 class="modal-entry__title">ВХОД</h2>
+        <label for="username" class="username">Имя пользователя:</label>
+        <input type="text" id="username" required>
+        <label for="password" class="username">Пароль:</label>
+        <input type="password" id="password" required>
+      <div class="agree__container">
+          <input type="checkbox"  id="agree" required> 
+          <label for="agree" class="agree__text">Согласиться с правилами</label> 
+      </div>
+        <button class="modal-entry__button" type="submit">Войти</button>
+       <span class="or">или</span>
+       <a href="#" class="modal-entry__registration">Зарегистрироваться</a>
+       <a href="#" class="modal-entry__rules">Правила оферты</a>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal-lots">
+  <div class="container">
+    <div class="modal-lots__container">
+
+     <button class="modal-lots__close">
+            <img src="img/icon/close.svg" alt="" class="modal__close-img">
+          </button>
+       <div class="modal-lots__img-container">
+        <!-- <img src="img/product/18.jpg" alt=""> -->
+       </div>
+       <div class="modal-cart__lots-img-small-container">
+        <img
+        src="img/product/12.jpg"
+        alt="image"
+        class="modal-cart__lots-img-small"
+      >
+      <img
+      src="img/product/6.jpg"
+      alt="image"
+      class="modal-cart__lots-img-small"
+    >
+        <img
+        src="img/product/10.jpg"
+        alt="image"
+        class="modal-cart__lots-img-small"
+      >
+      <img
+      src="img/product/8.jpg"
+      alt="image"
+      class="modal-cart__lots-img-small"
+    >
+    <img
+    src="img/product/4.jpg"
+    alt="image"
+    class="modal-cart__lots-img-small"
+    >
+    </div>
+       <div class="modal-lots__discription-container">
+           <span class="modal-lots__title">НАЗВАНИЕ</span>
+           <span class="modal-lots__discription">Уникальное сочетание агата, горного хрусталя и шерла(черного турмалина) делает этот браслет не только стильным аксессуаром, но и мощным оберегом. Дракон, символ наступающего года, добавляет ему особенной магии и силы.
+            Этот уникальный оберег не только подчеркнет вашу индивидуальность, но и защитит вас от негативной энергии. Обретите своего верного защитника в виде дракона с этим потрясающим браслетом!</span>
+           <div class="modal-lots__parametres">
+            <ul>
+              <li>Горный хрусталь d12мм,</li>  
+              <li>Дымчатый агат d12мм,</li> 
+              <li>Шерл 10х11мм,</li> 
+              <li>цитрин 5-6х9-10мм;</li>
+              <li>Подвеска дракон с покрытием латунь;</li>
+              <li>Браслет на резинке, размер регулирую по запросу;</li>
+             <li> Подарочная коробочка;</li>
+            </ul>
+          </div>
+         </div>
+      <div class="modal-lots__price-container">
+         <div class="modal-lots__price">
+  <span class="modal-lots__price">1250</span>
+  <span class="modal-lots__price-currency">₽</span>
+         </div>
+      </div>
+         
+       <button class="to-cart-btn">В КОРЗИНУ</button>
+    </div>
+  </div>
+</div>
+<script src="js/addToCart.js"></script>
+<script src="js/showText.js"></script>
+<script src="js/main.js"></script>
+<script src="js/modalLots.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.category').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      nextArrow: '<button type="button" class="slick-next">Вперед</button>',
+      prevArrow: '<button type="button" class="slick-prev">Назад</button>',
+      cssEase: 'linear',
+      variableWidth: true,
+      centerMode: true,
+      swipeToSlide: true, 
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            swipeToSlide: true 
+          }
+        }
+      ]
+    });
+  });
+</script>
+  </body>
+</html>

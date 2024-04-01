@@ -1,0 +1,131 @@
+.modal-lots {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: default;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 1s ease;
+  cursor: pointer;
+}
+
+.modal-lots__close{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 10px;
+  top: 5px;
+  margin: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: width 0.8s ease, height 0.8s ease;
+  z-index: 2;
+}
+.modal-lots__close :hover {
+  width: 28px;
+  height: 28px;
+ }
+
+.modal-lots__open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-lots__container {
+  display: flex;
+  position: relative; 
+left: 0;
+ top: 50%;
+ transform: translateY(-50%);
+  background-color: #fff;
+  width: 100%;
+  height: 600px;
+border-radius: 30px;
+cursor: default;
+}
+
+
+.modal-lots__img-container {
+ display: flex;
+ position: relative;
+top: 20px;
+margin-left: 50px;
+  width: 450px;
+  height: 450px;
+  border: 4 solid #8f247c;
+  z-index: 3;
+  background-color: #3f3f3f;
+}
+
+.modal-cart__lots-img-small-container {
+  display: flex;
+  position: absolute;
+  width: 450px;
+  justify-content: start;
+  gap: 20px;
+  bottom: 30px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.modal-cart__lots-img-small {
+  width: 80px;
+  height: 80px;
+}
+
+.modal-lots__discription-container{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 40px;
+  width: 1000px;
+
+}
+
+.modal-lots__title {
+  top: 50px;
+  color: #8f247c;
+  font-size: 36px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  width: fit-content;
+  max-width: 600px;
+}
+
+.modal-lots__discription {
+  font-family: Fira Sans, serif;
+  position: relative;
+margin-bottom: 30px;
+text-indent: 20px;
+line-height: 1.5;
+}
+
+.modal-lots__parametres {
+  font-family: Fira Sans, serif;
+  font-weight: 600;
+  position: relative;
+margin-bottom: 30px;
+font-size: 20px;
+text-indent: 20px;
+}
+.modal-lots__parametres li {
+  padding-bottom: 10px;
+}
+
+.modal-lots__price-container {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  bottom: 20px;
+ left: 85%;
+ color: #f00;
+font-size: 36px;
+}
+
+.modal-lots.to-cart-btn .to-cart-btn {
+  display: flex;
+  position: absolute;
+}
+
